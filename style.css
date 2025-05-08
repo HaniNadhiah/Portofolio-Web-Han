@@ -1,0 +1,178 @@
+.nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #426be6; /* Tailwind yellow-400 */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #426be6;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link.active {
+    color: #426be6;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+  /* Custom hover effect */
+  .skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius: 1rem;
+    background-color: #2d3748; /* Darker gray background */
+  }
+
+  .skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: #3182ce; /* Highlight blue color */
+  }
+
+  .skill-card img {
+    transition: transform 0.3s ease;
+  }
+
+  .skill-card:hover img {
+    transform: scale(1.2); /* Zoom in the icon */
+  }
+
+  @keyframes slide-in-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in-bottom {
+    animation: slide-in-bottom 1s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+
+  @keyframes slide-in-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in-bottom {
+    animation: slide-in-bottom 1s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+  /* Animasi slide up */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Kelas untuk elemen yang dianimasikan */
+  .animate-slide-up {
+    opacity: 0; /* Elemen mulai dengan transparan */
+  }
+
+  .animated {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+  }
+  /* Hover biru untuk semua elemen interaktif */
+  .hover-blue:hover {
+    color: #3b82f6; /* Tailwind blue-500 */
+  }
+  .hover-bg-blue:hover {
+    background-color: #3b82f6; /* Tailwind blue-500 */
+  }
+  .footer-social-btn:hover {
+    background-color: #3b82f6; /* Tailwind blue-500 */
+  }
